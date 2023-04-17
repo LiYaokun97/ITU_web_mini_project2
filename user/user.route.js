@@ -11,4 +11,4 @@ userRouter.use(express.json())
 userRouter.get("/user/:name", getUserByName);
 // This method is used to add new user. We use put rather than post simply because
 // we allow adding duplicate users.
-userRouter.put("/user", addOneUser);
+userRouter.post("/user", addOneUser);
